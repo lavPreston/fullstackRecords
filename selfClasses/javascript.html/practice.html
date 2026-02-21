@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+    <!-- EXERCISE 1
+        <h1 id="h1">hello world</h1>
+        <button onclick="change()">Click to change</button>
+
+        <script>
+            
+            function change()
+            {
+                document.getElementById("h1").innerText="bye world"
+            }//4:35:09
+        </script>//
+     -->
+        <!-- EXERCISE 2 -->
+    <!-- <label>box1</label><input type="number" id="num1" value="20">
+    <label>box2</label><input type="number" id="num2" value="30"><br>
+    <button onclick="add()">Add</button>
+    <p id="result"> the sum is</p>
+    <script>
+        var a = document.getElementById("num1")
+        var b = document.getElementById("num2")
+        function add()
+        {
+        var c=document.getElementById("result")
+        var avalue=Number(a.value)
+        var bvalue=Number(b.value)
+        var total = Number( avalue+bvalue)
+        console.log(total)
+        result.textContent="the sum is" + total}
+    
+    </script> --> 
+    <!-- EXERCISE 3 -->
+     <h1>Guess the number from 1 to 10</h1>
+     <input type="number" id="num"></input>
+     <!-- his id for input is guessnumber -->
+     <button onclick="game()">Check</button>
+     <p id="score"></p>
+     <p id="totalScore"></p>
+    
+     <!-- his id for p is result -->
+    <script>
+        var yourScore=document.getElementById("totalScore")
+        var yourScore=10
+        console.log(yourScore)
+        var scoreKeeper=document.getElementById("total")
+        function game()
+        {
+        var a=Math.random()
+        var guess= Math.floor(a*10)+1
+        console.log(guess)
+        var inputs = document.getElementById("num")
+        var correctness=Number(inputs.value)//.value missing
+        console.log(correctness)
+        
+        var x=guess
+        if(x===correctness)
+        {
+            console.log("ok")
+            document.getElementById("score").innerText=("the guess was right! you won")
+            alert("you won")
+        }
+        if(x!=correctness && yourScore>0){
+            console.log("not ok")
+            document.getElementById("score").innerText=("please try again!")
+            
+            document.getElementById("totalScore").innerText=("score:" + yourScore)
+            yourScore=yourScore-1 
+            console.log(yourScore)}
+        if(x!=correctness && yourScore<0){
+            console.log(yourScore)
+            yourScore=yourScore-1
+            console.log(yourScore)
+            alert("Refresh and start playing again")
+        }
+        }
+            // var scoreKeeper= document.getElementById("total")
+            // for(count=10; count<=10 && count>1; count=count-1)
+            // {
+            //     document.getElementById("total").innerText="score:"+10
+            // }
+        
+
+    </script>
+    </body>
+</html>

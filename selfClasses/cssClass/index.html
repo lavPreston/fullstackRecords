@@ -1,0 +1,35 @@
+<!-- Types - Inline (within line), Internal (within head), External -->
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <title>CSS Class Notes</title>
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyE28KyPTWnZhWewY-0s5NqxUtZYnw6kr2ag&s">
+        <!-- If I use this line instead of line 11, I will not get almond color since this is read first. 
+        <style> div{background-color: blanchedalmond;} </style> */ -->
+        <style>div{background-color: blanchedalmond;}</style>
+         <link rel="stylesheet" href="C:\Users\Simon Preston\OneDrive\Desktop\cubensquare classes\HTML classes\selfClasses\cssClass\index.css">
+        <style>
+            h2{background-color: RGBA(78, 90,21);}
+            /* If I use this line instead of line 7, I will get almond color since this is the latest read. 
+            div{background-color: blanchedalmond;} */
+        </style>
+    </head>
+    <body>
+        <div> I have used external styling.
+            <h1>The below is using RGB</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt delectus architecto distinctio quos recusandae quo animi cum veniam repellendus, tempore inventore sunt provident nihil eaque fugit alias amet culpa nulla dolorum rerum! Optio ipsa magni dolor molestiae explicabo officia cum aliquam expedita autem fuga doloribus, beatae consequuntur, ipsum repellendus vero at totam tempora, non assumenda? Odio tempore, delectus dolore est veritatis animi soluta doloribus assumenda aperiam consequuntur error quae, omnis accusantium ad, laudantium a deleniti voluptatum. Ipsum dolores autem perferendis. Voluptatem debitis laborum architecto cumque iure placeat neque dignissimos, eligendi quos possimus sint provident et quidem accusamus, dolorem expedita temporibus.</p>
+        </div>
+
+        <span> Here also I have used external styling.<h1>The below is using RGBA</h1> This portion is also part of the span
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt delectus architecto distinctio quos recusandae quo animi cum veniam repellendus, tempore inventore sunt provident nihil eaque fugit alias amet culpa nulla dolorum rerum! Optio ipsa magni dolor molestiae explicabo officia cum aliquam expedita autem fuga doloribus, beatae consequuntur, ipsum repellendus vero at totam tempora, non assumenda? Odio tempore, delectus dolore est veritatis animi soluta doloribus assumenda aperiam consequuntur error quae, omnis accusantium ad, laudantium a deleniti voluptatum. Ipsum dolores autem perferendis. Voluptatem debitis laborum architecto cumque iure placeat neque dignissimos, eligendi quos possimus sint provident et quidem accusamus, dolorem expedita temporibus.</p>
+        </span>
+
+        <div>
+            <h1 style="background-color: tomato;">Today is the first session of CSS and I am enjoying it. I have used inline styling for this line.</h1>
+        </div>
+        
+        <!-- <article> i have used RGBA but why is what's in p tag is also getting a background color? -->
+        <div>I have used internal styling for this line.
+            <h2> There was an article about the Winter budget session in today's newspaper. Funnily, it also spoke of Honorable FM, Nirmala Seetharaman'S Kanchipuram Silk saree.</h2></div>
+        <!-- </article> -->
+    </body>
+ </html>
