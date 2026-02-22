@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>e-commerce</title>
+        <style>
+            @media (min-width:1024px){/*laptop and above*/
+                header{
+                    flex-wrap: wrap;
+                    gap: 10px;
+                }
+                .searchfield{
+                    width: 100%;
+                    order:3;/*find what this is*/
+                }
+                
+                
+            }
+            @media (max-width:1024px){/*tablet and below*/
+                header{
+                    flex-direction: row;
+                    padding: 10px;
+                    width: 50%;
+                }
+                .logo{
+                    width: 50%;
+                    height: 50%;
+                }
+                .deliver{
+                    width: 50%;
+                }
+                .searchfield{
+                    width: 50%;
+                    
+                }
+                .lang{
+                    width: 15%;
+                }
+                .signin{
+                    
+                    visibility: hidden;
+                }
+                .help{
+                    width: 50%;
+                    visibility: hidden;
+                }
+                .images{
+                    width:10%;
+                    height:10%;
+                }
+                .products{
+                margin-top: 50%;
+                margin-left: 50%;
+                display: grid;
+                grid-template-columns: 3fr 3fr 3fr;
+            }
+            .picture{
+                width:50%;
+                height: 50%;
+            }
+                
+            }
+            
+            .header{
+                display: flex;
+                background-color: black;
+                color: white;
+                align-items: center;/*this brought everything in a straight line*/
+                
+                padding: 0.5%;
+                padding-bottom: 0px;
+                gap: 20px;
+                width: 100%;
+                flex-wrap: nowrap;/* prevents wrapping!! u forgot this, didnt know application*/
+                position: relative;
+            }
+            .logo{
+                width:100px;
+                height: auto;
+            }
+            .deliver{
+                white-space: nowrap;/* study this*/
+            }
+            
+            .searchfield{
+                flex: 1;/* study this*/
+                width:100%;
+                font-size: 14px;
+            }
+            .lang{
+               font-size: 13px;
+               border-radius: 4px;
+            }
+            .signin{
+                text-decoration: none;
+                color: white;
+                position: absolute;
+                right:160px;
+            }
+            .help{
+                text-align: right;
+                position: absolute;/*good thinking!!*/
+                right: 30px;
+            }
+            .products{
+                margin-top: 20px;
+                margin-left: 30px;
+                display: grid;
+                grid-template-columns: 3fr 3fr 3fr;
+            }
+            .picture{
+                width:300px;
+                height: 150px;
+            }
+            
+        
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <img class="logo" src="C:\Users\Simon Preston\OneDrive\Desktop\fullStacklearning\selfClasses\html&cssCompiled\Screenshot 2026-02-22 170943.png">
+            <p class="deliver">📍 Deliver<br> to India</p>
+            
+            <p> <input type="text" class="searchfield" placeholder="Search for results"></p>
+            <select class="lang"><option>EN -English</option><option>HIN -Hindi</option><option>TA- Tamil</option></select>
+            <a  class="signin" href="C:\Users\Simon Preston\OneDrive\Desktop\fullStacklearning\selfClasses\html&cssCompiled\signin.html">Hello, sign in <br><b>Accounts & Lists</b></a>
+            <p class="help">click for help</p>
+        </header>
+        <div class="products">
+            <div class="img1"><img class="picture" src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_2x._SY232_CB624172947_.jpg" alt="this is alt text" ><br><p>Cleaning tools</p></div>
+            <div class="img1"><img class="picture" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/CleaningTool_2x._SY232_CB563137408_.jpg" alt="this is alt text" ><br><p>jeans under 1000rs</p></div>
+            <div class="img1"><img class="picture" src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_2x._SY232_CB623353881_.jpg" alt="this is alt text" ><br><p>tops under 1000rs</p></div>
+            <div class="img1"><img class="picture" src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_2x._SY232_CB623353881_.jpg" alt="this is alt text" ><br><p>dresses under 1000rs</p></div>
+            <div class="img1"><img class="picture" src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_2x._SY232_CB624172947_.jpg" alt="this is alt text" ><br><p>shoes under 1000rs</p></div>
+            <div class="img1"><img class="picture" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/Bedding_2x._SY232_CB563137408_.jpg" alt="this is alt text" ><br><p>bedding under 5000rs</p></div>
+            <div class="img1"><img class="picture" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeStorage_2x._SY232_CB563137408_.jpg" alt="this is alt text" ><br><p>homestorage under 5000 rs</p></div>
+            <div class="img1"><img class="picture" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeDecor_2x._SY232_CB563137408_.jpg" alt="this is alt text" ><br><p>homedecor under 5000rs</p></div>
+            
+        </div>
+        <footer>
+
+        </footer>
+    </body>
+</html>
